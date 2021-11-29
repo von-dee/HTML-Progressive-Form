@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Wizard-v5</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/nunito-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div class="page-content">
+		<div class="wizard-v5-content">
+			<div class="wizard-form">
+		        <form class="form-register" id="form-register" action="#" method="post">
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+			            	<span class="step-text">Personal Information</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="first_name">First Name</label>
+										<input type="text" placeholder="ex: Laura" class="form-control" id="first_name" name="first_name">
+									</div>
+									<div class="form-holder">
+										<label for="last_name">Last Name</label>
+										<input type="text" placeholder="ex: Vaughn" class="form-control" id="last_name" name="last_name">
+									</div>
+								</div>
+								<div class="form-row">
+									<div id="radio">
+										<label for="person_gender">Gender:</label>
+										<input type="radio" name="person_gender" value="male" checked> Male
+  										<input type="radio" name="person_gender" value="female"> Female
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="address">Home Address | Location</label>
+										<input type="text" placeholder="622 Dixie Path, South Tobinchester, UT 98336" class="form-control" id="person_address" name="person_address">
+										<span><i class="zmdi zmdi-pin"></i></span>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-3">
+										<label for="phone">Phone Number</label>
+										<input type="text" placeholder="+1 777-888-8888" class="form-control" id="person_phone" name="person_phone">
+									</div>
+									<div class="form-holder">
+										<label for="code">Email</label>
+										<input type="email" class="form-control" id="person_email" name="person_email">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-3">
+										<label for="phone">City</label>
+										<input type="text" placeholder="+1 777-888-8888" class="form-control" id="person_city" name="person_city">
+									</div>
+									<div class="form-holder">
+										<label for="code">Zip Code</label>
+										<input type="text" class="form-control" id="code" name="code">
+									</div>
+								</div>
+								<div class="form-row form-row-date">
+									<div class="form-holder form-holder-2">
+										<label for="date" class="special-label">Date of Birth:</label>
+										<select name="date" id="date" class="form-control">
+											<option value="15" selected>15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+										</select>
+										<select name="month" id="month" class="form-control">
+											<option value="Jan" selected>Jan</option>
+											<option value="Feb">Feb</option>
+											<option value="Mar">Mar</option>
+											<option value="Apr">Apr</option>
+											<option value="May">May</option>
+										</select>
+										<select name="year" id="year" class="form-control">
+											<option value="2018" selected>2018</option>
+											<option value="2017">2017</option>
+											<option value="2016">2016</option>
+											<option value="2015">2015</option>
+											<option value="2014">2014</option>
+											<option value="2013">2013</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-3">
+										<label for="phone">Language</label>
+										<select name="year" id="year" class="form-control">
+											<option value="2018" selected>2018</option>
+											<option value="2017">2017</option>
+											<option value="2016">2016</option>
+											<option value="2015">2015</option>
+											<option value="2014">2014</option>
+											<option value="2013">2013</option>
+										</select>
+									</div>
+									<div class="form-holder">
+										<label for="code">Country</label>
+										<select name="year" id="year" class="form-control">
+											<option value="2018" selected>Ghana</option>
+											<option value="2017">Nigeria</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-3">
+										<label for="phone">Other Phone Number</label>
+										<input type="text" placeholder="+1 777-888-8888" class="form-control" id="phone" name="phone">
+									</div>
+									<div class="form-holder">
+										<label for="code">Business Phone</label>
+										<input type="text" class="form-control" id="code" name="code">
+									</div>
+								</div>
+								<div class="form-row">
+									<div id="radio">
+										<label for="gender">Are you involed in any pending litigations?</label>
+										<input type="radio" name="litigation" value="1" checked> Yes
+  										<input type="radio" name="litigation" value="0"> No
+									</div>
+								</div>
+								<div class="form-row">
+									<div id="radio">
+										<label for="gender">Have you or your Spouse ever been declared personally Bankrupt?</label>
+										<input type="radio" name="person_bankrupt" value="1" checked> Yes
+  										<input type="radio" name="person_bankrupt" value="0"> No
+									</div>
+								</div>
+								<div class="form-row">
+									<div id="radio">
+										<label for="gender">Are you legally entitled to work in the Country?</label>
+										<input type="radio" name="person_entitled" value="1" checked> Yes
+  										<input type="radio" name="person_entitled" value="0"> No
+									</div>
+								</div>
+								<div class="form-row">
+									<div id="radio">
+										<label for="gender">Have you been convicted of any felony?</label>
+										<input type="radio" name="person_felony" value="1" checked> Yes
+  										<input type="radio" name="person_felony" value="0"> No
+									</div>
+								</div>
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+			            	<span class="step-text">Company Information</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="bank">Company Name:</label>
+										<input type="text" placeholder="UsBank" class="form-control input-step-2" id="bank" name="bank">
+										<span><i class="zmdi zmdi-search"></i></span>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="bank">Country</label>
+										<input type="text" placeholder="UsBank" class="form-control input-step-2" id="bank" name="bank">
+										<span><i class="zmdi zmdi-search"></i></span>
+									</div>
+									<div class="form-holder">
+										<label for="branch">City</label>
+										<input type="text" placeholder="America" class="form-control input-step-2" id="branch" name="branch">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="email">Location:</label>
+										<input type="email" name="email" class="email input-step-2-1" id="email" placeholder="ex: example@email.com" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="bank">Phone</label>
+										<input type="text" placeholder="UsBank" class="form-control input-step-2" id="bank" name="bank">
+										<span><i class="zmdi zmdi-search"></i></span>
+									</div>
+									<div class="form-holder">
+										<label for="branch">Email</label>
+										<input type="email" placeholder="America" class="form-control input-step-2" id="branch" name="branch">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="bank">Phone</label>
+										<input type="text" placeholder="UsBank" class="form-control input-step-2" id="bank" name="bank">
+										<span><i class="zmdi zmdi-search"></i></span>
+									</div>
+									<div class="form-holder">
+										<label for="branch">Email</label>
+										<input type="email" placeholder="America" class="form-control input-step-2" id="branch" name="branch">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="bank">Fax</label>
+										<input type="text" placeholder="UsBank" class="form-control input-step-2" id="bank" name="bank">
+										<span><i class="zmdi zmdi-search"></i></span>
+									</div>
+									<div class="form-holder">
+										<label for="branch">Type of Copany</label>
+										<select name="date_2" id="date_2" class="form-control">
+											<option value="15" selected>Select</option>
+											<option value="16">Sole Proprietor</option>
+											<option value="17">Limited Liability Company</option>
+											<option value="18">Partnership</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="account_name">Registration Number:</label>
+										<input type="text" placeholder="Account Name" class="form-control input-step-2-1" id="account_name" name="account_name">
+									</div>
+								</div>
+								<div class="form-row form-row-date form-row-step-2">
+									<div class="form-holder form-holder-2">
+										<label for="date_2" class="special-label">Date of Incoration:</label>
+										<select name="date_2" id="date_2" class="form-control">
+											<option value="15" selected>15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+										</select>
+										<select name="month_2" id="month_2" class="form-control">
+											<option value="Jan" selected>Jan</option>
+											<option value="Feb">Feb</option>
+											<option value="Mar">Mar</option>
+											<option value="Apr">Apr</option>
+											<option value="May">May</option>
+										</select>
+										<select name="year_2" id="year_2" class="form-control">
+											<option value="2018" selected>2018</option>
+											<option value="2017">2017</option>
+											<option value="2016">2016</option>
+											<option value="2015">2015</option>
+											<option value="2014">2014</option>
+											<option value="2013">2013</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="account_name">Registration Number:</label>
+										<input type="text" placeholder="Account Name" class="form-control input-step-2-1" id="account_name" name="account_name">
+									</div>
+								</div>
+								<div class="form-row">
+										<div class="form-holder form-holder-2">
+											<label for="account_name">Names of States / Districts / Territories you occupy:</label>
+											<input type="text" placeholder="Account Name" class="form-control input-step-2-1" id="account_name" name="account_name">
+										</div>
+									</div>
+								<div class="form-row">
+									<div id="radio">
+										<label for="gender">Are you involed in any pending litigations?</label>
+										<input type="radio" name="comp_litigation" value="1" checked> Yes
+											<input type="radio" name="comp_litigation" value="0"> No
+									</div>
+								</div>
+								<div class="form-row">
+									<div id="radio">
+										<label for="gender">Have your company ever been declared Bankrupt?</label>
+										<input type="radio" name="comp_bankrupt" value="1" checked> Yes
+											<input type="radio" name="comp_bankrupt" value="0"> No
+									</div>
+								</div>
+								<div class="form-row">
+									<div id="radio">
+										<label for="gender">Are you legally entitled to work in the Country?</label>
+										<input type="radio" name="comp_entitled" value="1" checked> Yes
+											<input type="radio" name="comp_entitled" value="0"> No
+									</div>
+								</div>
+								<div class="form-row">
+									<div id="radio">
+										<label for="gender">Have you been convicted of any felony?</label>
+										<input type="radio" name="comp_felony" value="1" checked> Yes
+											<input type="radio" name="comp_felony" value="0"> No
+									</div>
+								</div>	
+							</div>
+						</section>
+
+
+			            <!-- SECTION 3 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+			            	<span class="step-text">Setup Administrator</span>
+			            </h2>
+						<section>
+							<div class="inner" style="width: 60em;margin: 0em 19em;">
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="branch">Full Name</label>
+										<input type="text" placeholder="America" class="form-control input-step-2" id="branch" name="branch">
+									</div>
+								</div>
+							
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="username">Username:</label>
+										<input type="username" name="username" class="email input-step-2-1" id="email" placeholder="ex: example@email.com" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="email">email:</label>
+										<input type="email" name="email" class="email input-step-2-1" id="email" placeholder="ex: example@email.com" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+									</div>
+								</div>
+								
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="email">Password:</label>
+										<input type="email" name="email" class="email input-step-2-1" id="email" placeholder="ex: example@email.com" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="email">Confirm Password:</label>
+										<input type="email" name="email" class="email input-step-2-1" id="email" placeholder="ex: example@email.com" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+									</div>
+								</div> 
+							</div>
+						</section>
+						
+					    <!-- SECTION 4 -->
+			            <h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+			            	<span class="step-text">Company Documents</span>
+			            </h2>
+						<section>
+								<div class="inner" style="width: 60em;margin: 0em 4em;">
+									<div class="form-row">
+										<div class="form-holder">
+											<label for="first_name">Certificate Name</label>
+											<input type="text" placeholder="ex: Laura" class="form-control" id="first_name" name="first_name">
+										</div>
+										<div class="form-holder">
+											<label for="last_name">Awarded By</label>
+											<input type="text" placeholder="ex: Vaughn" class="form-control" id="last_name" name="last_name">
+										</div>
+									</div>
+									<div class="form-row form-row-date">
+										<div class="form-holder form-holder-2">
+											<label for="date" class="special-label">Date of Birth:</label>
+											<select name="date" id="date" class="form-control">
+												<option value="15" selected>15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+											</select>
+											<select name="month" id="month" class="form-control">
+												<option value="Jan" selected>Jan</option>
+												<option value="Feb">Feb</option>
+												<option value="Mar">Mar</option>
+												<option value="Apr">Apr</option>
+												<option value="May">May</option>
+											</select>
+											<select name="year" id="year" class="form-control">
+												<option value="2018" selected>2018</option>
+												<option value="2017">2017</option>
+												<option value="2016">2016</option>
+												<option value="2015">2015</option>
+												<option value="2014">2014</option>
+												<option value="2013">2013</option>
+											</select>
+										</div>
+									</div>
+
+									<div>
+										<h3>Added Certificates</h3>
+										<div class="form-row table-responsive">
+											<table class="table">
+												<thead>
+													<th class="th_cet">Name</th>
+													<th class="th_cet">Awarded By</th>
+													<th class="th_cet">Date</th>													
+												</thead>
+												<tbody>
+													<tr class="space-row">
+														<td ></td>
+														<td ></td>
+														<td ></td>
+													</tr>													
+												</tbody>
+											</table>
+										</div>
+									</div>
+														
+								</div>
+							</section>
+						
+						<!-- SECTION 5 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+							<span class="step-text">Confirm Details</span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3>Personal Information</h3>
+								<div class="form-row table-responsive">
+									<table class="table">
+										<tbody>
+											<tr class="space-row">
+												<th>Full Name:</th>
+												<td id="first_name-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Last Name:</th>
+												<td id="last_name-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Gender:</th>
+												<td id="person_gender-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Home Address | Location:</th>
+												<td id="person_address-val"></td>
+											</tr>	
+											<tr class="space-row">
+												<th>Home Address | Location:</th>
+												<td id="person_address-val"></td>
+											</tr>	
+											<tr class="space-row">
+												<th>Phone Number:</th>
+												<td id="person_phone-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Email:</th>
+												<td id="person_email-val"></td>
+											</tr>	
+											<tr class="space-row">
+												<th>City:</th>
+												<td id="person_city-val"></td>
+											</tr>	
+												
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</section>
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
